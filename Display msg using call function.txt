@@ -1,0 +1,7 @@
+#include<iostream>
+void display(){
+	std::cout<<"welcome";
+}
+int main(){
+	display();
+}

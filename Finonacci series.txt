@@ -1,0 +1,24 @@
+#include <iostream>
+int main() {
+    int n;
+    std::cout << "Enter the position (N) of the Fibonacci number: ";
+    std::cin >> n;
+
+    int a = 0, b = 1, fib;
+
+    if (n == 1) {
+        fib = a;
+    } else if (n == 2) {
+        fib = b;
+    } else {
+        int i = 3;  
+        while (i <= n) {
+            fib = a + b;  
+            a = b;  
+            b = fib;  
+            i++;
+        }
+    }
+    std::cout << "The " << n << "th Fibonacci number is: " << fib << std::endl;
+    return 0;
+}

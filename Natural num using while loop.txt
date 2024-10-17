@@ -1,0 +1,15 @@
+#include<iostream>
+int main(){
+	int i=1,sum=0,n;
+	std::cout<<"enter the number";
+	std::cin>>n;
+	if(n<1){
+		std::cout<<"enter positive integer";
+		return 1;
+	}
+	while(i<=n){
+		sum=sum+i;
+		i++;
+	}
+	std::cout<<"the first n natural num"<<sum<<std::endl;
+}

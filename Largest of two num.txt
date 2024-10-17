@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+inline int largest(int a,int b){
+	int r;
+	r=(a>b)?a:b;
+	return(r);
+}
+int main(){
+	int a,b;
+	cout<<"enter first and second num:";
+	cin>>a;
+	cin>>b;
+	cout<<"largest of two numbers"<<a<<"and"<<b<<"is"<<largest(a,b)<<endl;
+}

@@ -1,0 +1,14 @@
+#include<iostream>
+int main(){
+	int i,sum=0,n;
+	std::cout<<"enter the number";
+	std::cin>>n;
+	if(n<1){
+		std::cout<<"enter positive integer";
+		return 1;
+	}
+	for(i=1;i<=n;i++){
+		sum=sum+i;
+	}
+	std::cout<<"the first n natural num"<<sum<<std::endl;
+}
